@@ -1,0 +1,118 @@
+
+.cta-bg-image_one {
+  background-color: #454545;
+  background-image: url(../images/patterns/mitech-call-to-action-image-global.webp);
+  background-repeat: no-repeat;
+  background-position: top 35% right -68px;
+}
+
+.cta-bg-image_two {
+  background-color: #f6f2ed;
+  background-image: url(../images/patterns/mitech-home-appointment-call-to-action-bg-image.webp);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .cta-content {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.cta-button-group--one .btn-one {
+  color: #b41525;
+  margin: 10px;
+}
+
+.cta-button-group--one .btn-one:hover {
+  background: #b41525;
+  color: #ffffff;
+}
+
+.cta-button-group--one .btn-two {
+  margin: 10px;
+}
+
+.cta-button-group--one .btn-two:hover {
+  background: #b41525;
+  color: #ffffff;
+}
+
+.cta-button-group--two .btn-one {
+  background: #b41525;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.cta-button-group--two .btn-two {
+  margin: 10px;
+}
+
+.talk-message-box {
+  max-width: 630px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #e7edfa;
+  padding: 28px 35px;
+  position: relative;
+}
+
+.talk-message-box .message-icon {
+  font-size: 24px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 64px;
+  background: #fff;
+  -webkit-box-shadow: 0 18px 40px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 18px 40px rgba(51, 51, 51, 0.1);
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  color: #b41525;
+}
+
+@media only screen and (max-width: 767px) {
+  .talk-message-box .message-icon {
+    top: -43px;
+    left: 5px;
+  }
+}
+
+.talk-message-box-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talk-message-box-content .heading {
+  max-width: 350px;
+}
+
+@media only screen and (max-width: 767px) {
+  .talk-message-box-content .heading {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .talk-message-box-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .talk-message-box-content .heading {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,227 @@
+
+.separator-list .list-item {
+  position: relative;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+.separator-list .list-item::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #eee;
+}
+
+.separator-list .list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.separator-list .list-item:last-child::before {
+  display: none;
+}
+
+.separator-list .list-item a {
+  line-height: 16px;
+}
+
+.check-list .list-item {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+.check-list .list-item::before {
+  color: #b41525;
+  content: '\f00c';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+}
+
+.check-list .list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.check-list .list-item a {
+  line-height: 16px;
+}
+
+.check-list.check-list-color-two .list-item::before {
+  color: #d2a98e;
+}
+
+.circle-list .list-item {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 12px;
+}
+
+.circle-list .list-item::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #999;
+}
+
+.circle-list .list-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.circle-list .list-item a {
+  line-height: 16px;
+}
+
+.icon-list .list-item {
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+}
+
+.icon-list .list-item .list__icon {
+  color: #b41525;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.icon-list .list-item a {
+  line-height: 16px;
+}
+
+ol {
+  min-width: 45px;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.automatic-numbered-list .list-item {
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.automatic-numbered-list .list-item a {
+  line-height: 16px;
+}
+
+.ht-list.style-auto-numbered-02 .list-item {
+  position: relative;
+  padding: 0;
+  margin-bottom: 62px;
+}
+
+.ht-list.style-auto-numbered-02 .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.ht-list.style-auto-numbered-02 .list-item .link {
+  display: block;
+}
+
+.ht-list.style-auto-numbered-02 .list-item .link:hover .title {
+  color: #b41525;
+}
+
+.ht-list.style-auto-numbered-02 .list-item .link:hover .title::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  color: #b41525;
+}
+
+.ht-list.style-auto-numbered-02 .list-item .link:hover .title::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ht-list.style-auto-numbered-02 .list-item .link:hover .marker {
+  color: #b41525;
+}
+
+.ht-list.style-auto-numbered-02 .marker {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-right: 10px;
+  min-width: 45px;
+  color: #ababab;
+  display: inline-block;
+  float: left;
+}
+
+.ht-list.style-auto-numbered-02 .title-wrap {
+  overflow: hidden;
+}
+
+.ht-list.style-auto-numbered-02 .title {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-top: 14px;
+  padding-top: 20px;
+  border-top: 2px solid #ededed;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding-right: 15px;
+}
+
+.ht-list.style-auto-numbered-02 .title::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  content: '\f178';
+  position: absolute;
+  top: 38px;
+  right: 0;
+  color: #333;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ht-list.style-auto-numbered-02 .title::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  content: '\f178';
+  position: absolute;
+  top: 38px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
